@@ -236,7 +236,7 @@ if(BUILD_LIBHDFSPP)
   add_definitions(-DBUILD_LIBHDFSPP)
 endif(BUILD_LIBHDFSPP)
 
-add_library (orc STATIC ${SOURCE_FILES})
+add_library (orc ${SOURCE_FILES})
 
 target_link_libraries (orc
   orc::protobuf
